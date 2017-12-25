@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: haproxy-self-reload
+spec:
+  containers:
+  - image: aledbf/haproxy-self-reload:0.2
+    name: haproxy
+    ports:
+    - containerPort: 80
